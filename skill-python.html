@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java Projects</title>
+    <title>ML Projects</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,48 +22,83 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
+        .section {
+            margin-bottom: 20px; /* Adds space between sections */
+        }
+
         .section h2 {
             font-size: 1.5em;
             border-bottom: 2px solid #ddd;
             padding-bottom: 5px;
+            color: #333;
+        }
+
+        ul {
+            list-style: none; /* Removes default list bullets */
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 15px; /* Space between each list item */
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .dynamic-content {
+            display: flex;
+            flex-direction: column; /* Ensures vertical stacking of sections */
+            gap: 20px; /* Adds vertical spacing between sections */
         }
     </style>
 </head>
 <body>
     <div class="resume-container">
-        <div class="section">
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming: Python, SQL.</li>
-                <li>Machine Learning Algorithms: Supervised, Unsupervised, and Deep Learning</li>
-                <li>Libraries & Frameworks: Scikit-learn, Pandas, NumPy, Matplotlib.
-                </li>
-                <li>Cloud & Deployment: AWS, Google Cloud.</li>
-            </ul>
-        </div>
-        <div class="section">
-            <h2>Experience</h2>
-            <ul>
-                <li>Intern at CodSoft (June 2024 - August 2024)</li>
-            </ul>
-        </div>
-        <div class="section">
-            <h2>Project</h2>
-            <ul>
-                <li>Car Price Prediction Model<br>
-
-                    Developed a ML model to predict used car prices based on features like make, model, year, mileage, and engine size.<br>
-                    Utilized algorithms such as Random Forest Regressor and Linear Regression for accurate price forecasting.<br>
-                    Preprocessed data by handling missing values, encoding categorical variables, and scaling features.<br>
-                    Evaluated model performance using Mean Squared Error (MSE), achieving a significant reduction in prediction error.<br>
-                    Deployed the model using Flask, enabling real-time car price predictions.</li>
-            </ul>
-        </div>
-        <div class="section">
-            <h2>Project Link</h2>
-            <ul>
-                <li><a href="https://github.com/Saket-9507/INTERNPE_TASK-2" target="_blank">Car Price Prediction Model</a></li>
-            </ul>
+        <div class="dynamic-content">
+            <div class="section">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Programming: Python, SQL.</li>
+                    <li>Machine Learning Algorithms: Supervised, Unsupervised, and Deep Learning.</li>
+                    <li>Libraries & Frameworks: Scikit-learn, Pandas, NumPy, Matplotlib.</li>
+                    <li>Cloud & Deployment: AWS, Google Cloud.</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Experience</h2>
+                <ul>
+                    <li>Intern at CodSoft (June 2024 - August 2024)</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Project</h2>
+                <ul>
+                    <li>
+                        <strong>Car Price Prediction Model</strong><br>
+                        <span>Developed a ML model to predict used car prices based on features like make, model, year, mileage, and engine size.</span><br>
+                        <span>Utilized algorithms such as Random Forest Regressor and Linear Regression for accurate price forecasting.</span><br>
+                        <span>Preprocessed data by handling missing values, encoding categorical variables, and scaling features.</span><br>
+                        <span>Evaluated model performance using Mean Squared Error (MSE), achieving a significant reduction in prediction error.</span><br>
+                        <span>Deployed the model using Flask, enabling real-time car price predictions.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Project Link</h2>
+                <ul>
+                    <li>
+                        <a href="https://github.com/Saket-9507/INTERNPE_TASK-2" target="_blank">
+                            Car Price Prediction Model
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
