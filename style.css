@@ -14,13 +14,12 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
     border-left: 2px solid #ddd;
 }
 
 .left-section {
-    flex: 0 0 200px;
     background: #c3c4c5;
     padding: 15px;
     border-radius: 8px;
@@ -64,16 +63,7 @@ body {
     text-decoration: underline;
 }
 
-.content {
-    flex: 1;
-}
-
-.header {
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-.header h1 {
+.content .header h1 {
     margin: 0;
     font-size: 2em;
     color: #333;
@@ -109,4 +99,18 @@ ul li ul {
 
 ul li ul li {
     list-style: circle;
+}
+
+@media (min-width: 768px) {
+    .resume-container {
+        flex-direction: row;
+    }
+
+    .left-section {
+        flex: 0 0 200px;
+    }
+
+    .content {
+        flex: 1;
+    }
 }
